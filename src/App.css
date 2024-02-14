@@ -1,0 +1,186 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.product-view{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.single-product-view{
+  display: inline-block;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.add-cart-btn {
+  position: relative;
+  top: 50%;
+  text-decoration: none;
+  color: #673AB7;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  background: #fff;
+}
+.sp-card-2 {
+  width: 230px;
+  border: 1px solid #f9f9f9;
+  text-align:left;
+
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  -o-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.searchbox, .searchButton{
+  height: 40px;
+  border: 2px solid;
+  border-radius: 5px;
+}
+  .sp-card-2 .overlap {
+      background: #3f51b57a;
+      width: inherit;
+      height: 0;
+      position: absolute;
+      text-align: center;
+      opacity: 0;
+
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      -o-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+  }
+
+      .sp-card-2:hover .overlap{
+          opacity: 1;
+          height: 204px;
+      }
+
+      .sp-card-2 .overlap a {
+          position: relative;
+          top: 50%;
+          text-decoration: none;
+          color: #673AB7;
+          padding: 10px;
+          font-size: 14px;
+          font-weight: 600;
+          background: #fff;
+      }
+  
+  .sp-card-2 .card-image {
+      text-align: center;
+  }
+  
+      .sp-card-2 .card-image img {
+          height: 200px;
+      }
+
+.sp-card-2 .card-content {
+  padding: 20px;
+}
+
+  .sp-card-2 .card-content .card-title {
+      font-weight: 600;
+  }
+
+  .sp-card-2 .card-content .price-start {
+      font-weight: 600;
+      color: #673AB7;
+      float: right;
+  }
+
+  .sp-card-2 .card-content .card-caption {
+      font-size: 14px;
+      color: #717171;
+      padding: 15px 0px 10px;
+  }
+
+  .sp-card-2 .card-content .cloth-size, .sp-card-2 .card-content .cloth-colors {
+      padding: 10px 0;
+      font-size: 13px;
+      color: #545454;
+      text-transform: uppercase;
+  }
+
+  .sp-card-2 .card-content .cloth-colors span:not(:nth-child(1)) {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border-radius: 40px;
+  }
+
+      .sp-card-2 .card-content .cloth-colors .color1 {
+          background: red;
+          border:1px solid black;
+          margin-left: 10px;            
+      }
+
+      .sp-card-2 .card-content .cloth-colors .color2 {
+          background: blue;
+          border:1px solid black;
+          margin-left: 35px;           
+      }
+
+      .sp-card-2 .card-content .cloth-colors .color3 {
+          background: Orange;
+          border:1px solid black;
+          margin-left: 60px;            
+      }
+
+      .sp-card-2 .card-content .cloth-colors .color4 {
+          background: black;
+          border:1px solid black;
+          margin-left: 85px;            
+      }
