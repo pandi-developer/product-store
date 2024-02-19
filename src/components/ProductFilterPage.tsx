@@ -1,5 +1,4 @@
-import { useContext, useState } from "react";
-import { ProductEntity } from "../types";
+import { useContext } from "react";
 import './ProductFilterPageStyle.css';
 import { FilterContext } from "./Product";
 
@@ -29,10 +28,10 @@ const FilterCheckbox = (Props: any) => {
       {
         checkbox.map((fil: any, index: number) => (
           <div key={`chceck-grop-${index}`} className="checkbox-group">
-            <input type="checkbox" id={fil} value={fil} onChange={(event) => {
+            <input key={`chceck-inp-${index}`} type="checkbox" id={fil} value={fil} onChange={(event) => {
             handleFilterObject(checkboxType, event.target.value);
       } }/>
-          <label htmlFor={fil}> {fil}</label>
+          <label key={`chceck-lable-${index}`} htmlFor={fil}> {fil}</label>
           </div> 
         ))
       }
@@ -50,7 +49,7 @@ const ProductFilterPage = () => {
   return(
     <>
       {
-        defaultFilters.map((fil, index) => (<div> <FilterGroups filter={fil}/> </div>))
+        defaultFilters.map((fil, index) => <FilterGroups key={`filter-grp-${index}`} filter={fil}/>)
       }
     </>
   )

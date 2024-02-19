@@ -25,7 +25,7 @@ const ProductCard = (props: ProductCardProps) => {
             <span><b>{product.color}</b></span>                                
           </div>
           <div className="cloth-size">
-            <span><b>gender :</b> </span>
+            <span><b>Gender :</b> </span>
             <span><b>{product.gender}</b></span>                                
           </div>
       </div>

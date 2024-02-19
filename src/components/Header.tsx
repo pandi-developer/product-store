@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 const Header = (props: any) => {
-  const myRef = useRef(null);
+  const cartRef = useRef(null);
   
   return (
     <header>
@@ -18,7 +18,7 @@ const Header = (props: any) => {
                  
                 }}
               >
-                <span ref={myRef} className="cart-notification">
+                <span ref={cartRef} className="cart-notification">
                   {0}
                 </span>
                 <svg
